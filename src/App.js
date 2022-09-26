@@ -12,6 +12,13 @@ const App = () => {
   ['1', '4', '7'],['2', '5', '8'], ['0', '4', '8'],
   ['2', '4', '6']])
 
+
+  
+
+  // const gameBoardArray = new Array(9)
+  // const gameBoardArray = ["","","","","","","","",""]
+
+
   // for (let i = 0; i < 3; i++) {
   //   const [a, b ,c] = winner[i];
   //   if (squares && squares[a] === squares[b] && squares[a] === squares[c]) {
@@ -28,8 +35,13 @@ const handleClick = (e) => {
   return (
     <>
       <h1>Tic Tac Toe</h1>
-      <Square squares={squares} handleClick={handleClick}/>
-    </>
+      {/* {gameBoardArray.map((e,i) => {
+        return ( */}
+        <Square squares={squares} handleClick={handleClick} />
+        {/* )
+      })
+      } */}
+      </>
   )
 }
 
